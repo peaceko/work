@@ -551,7 +551,7 @@ position: fixed;
 	@media screen and (max-width: 320px), screen and (max-width: 416px)
 {
 		
-body #wrapper #content #button-a{height:220px !important; }
+body #wrapper #content #button-a{height:274px !important; }
 
 		body #wrapper nav#primary a.button-b-s{
 	       width: 99px;
