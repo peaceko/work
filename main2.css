@@ -659,7 +659,7 @@ nav.next-prev {
 		#button-a p{ color:#FFF; text-shadow: 2px 2px red;  }
 		article.arti-a { display:block;  }
 		article.arti-a >img{ width:100%;}
-		#button-b{ margin-top:320px;}
+		/*#button-b{ margin-top:320px;}*/
 		#button-b span{  display: block; overflow: hidden;}
 		#button-b p{ color:#000;}
 		#button-b a img{ }
