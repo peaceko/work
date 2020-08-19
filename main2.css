@@ -243,7 +243,10 @@ nav#primary a.button-i-s {
 
 
 @media screen and (max-width: 1024px){
- nav#primary{ }
+ 
+#content #button-a{height:1282px;}
+
+nav#primary{ }
   img#bg2-1 {
    position: absolute;
     top: 404px;
@@ -317,6 +320,7 @@ article#button-e span >img#picrwd{ width: 21%;}
 
 @media screen and (max-width: 768px) , screen and (max-width: 927px) {
 
+#wrapper #content #button-a{height:800px;}
 
 body #wrapper {background-size:150%}
 
@@ -452,6 +456,8 @@ article#button-g .a1{    width: 29%;}
 }
 @media screen and (max-width: 400px) , screen and (max-width: 650px){
 	
+body #wrapper #content #button-a{height:340px;}
+
 
 #wrapper {    background-size: 160% !important;
     }
@@ -540,6 +546,8 @@ position: fixed;
 	@media screen and (max-width: 320px), screen and (max-width: 416px)
 {
 		
+body #wrapper #content #button-a{height:220px !important; }
+
 		body #wrapper nav#primary a.button-b-s{
 	       width: 99px;
     position: relative;
