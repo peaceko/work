@@ -219,6 +219,9 @@ nav#primary a.button-f-s {
 }
 nav#primary a.button-f-s:hover{ background: transparent url('navStyle22.png') -473px -60px  no-repeat; }
 
+
+
+
 nav#primary a.button-h-s {
 	display: block;
 	width: 86px;
@@ -240,6 +243,14 @@ nav#primary a.button-i-s {
 	margin-left:100px;
 
 }
+
+.bc-g .a1{ overflow:hidden; height:400px; }
+.bc-g .a1 .p1{ height:300px; overflow: hidden; }
+.bc-g .a1 .p1 img{ width:100%; transition: .90s ease-in-out; transform: rotate(0deg) scale(1); }
+.bc-g .a1 .p1 img:hover{ filter: grayscale(3) blur(0px); transform:rotate(45deg);  }
+header img{ width:100%; transition:.90s ease-in-out; transform: rotate(0deg) scale(1); }
+header img:hover{ filter: grayscale(3) blur(0px); transform: rotate(25deg); width:155%; }
+
 
 .arti-ac{opacity: 0;}
 .show{animation-name: aac; animation-duration: 3s; opacity: 1;}
