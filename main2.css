@@ -375,7 +375,7 @@ body #wrapper {background-size:150%}
 	    left: 5%;
 }
 
-.bc-g .a1 .p1{ height:unset; }
+.bc-g .a1{ height:100px; }
 
 #wrapper nav#primary a.button-a-s{
 display:none;
