@@ -375,6 +375,8 @@ body #wrapper {background-size:150%}
 	    left: 5%;
 }
 
+.bc-g .a1 .p1{ height:unset; }
+
 #wrapper nav#primary a.button-a-s{
 display:none;
     line-height: 23.6px;  
