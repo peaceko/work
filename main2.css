@@ -345,140 +345,140 @@ article#button-e span >img#picrwd{ width: 21%;}
 
 @media screen and (max-width: 768px) , screen and (max-width: 927px) {
 
-#wrapper #content #button-a{height:800px;}
+	#wrapper #content #button-a{height:800px;}
 
-body #wrapper {background-size:150%}
+	body #wrapper {background-size:150%}
 
 
-	#wrapper nav#primary {
-	z-index: 5;
+		#wrapper nav#primary {
+		z-index: 5;
+		position: fixed;
+		top: 1%;
+		right: 0;
+		    width: 100%;
+			/*background-color: #bcbcbc;*/
+	    padding-left: 6%;
+	    padding-bottom: 4.5%;
+		background:('navStyle.png');
+		
+	}
+
+	#wrapper nav#primary ul {
+		width:50%;
+		
+		}
+
+	#wrapper nav#primary li {
+	    position: relative;
+	    height: 0; 
+	    display: inline-flex;
+		    left: 5%;
+	}
+
+	.bc-g .a1{ height:100px; }
+
+	#wrapper nav#primary a.button-a-s{
+	display:none;
+	    line-height: 23.6px;  
+		position: fixed;
+	    top: 2.5%;
+	    left: 1%;
+	}
+
+	#wrapper nav#primary a.button-b-s{
+	display:none;
+		       width: 99px;
+	    position: relative;
+	    top: -6.8%;
+	    left: 60.4%;
+		}
+	#wrapper nav#primary a.button-c-s{
+	display:none;
+	    margin-top: 0;
+	    margin-left: 15px;
+	    line-height: 2px;
+	}
+
+	#wrapper nav#primary a.button-d-s{
+	display:none;
+		    position: fixed;
+	    top: 2.5%;
+	    left: 34.1%;
+		}
+	#wrapper nav#primary a.button-e-s{
+	display:none;
+	        position: fixed;
+	    top: 2.5%;
+	    left: 48%;
+		}
+	#wrapper nav#primary a.button-f-s{
+	display:none;
+	        position: fixed;
+	    top: 2.5%;
+	    left: 61.9%;
+		}
+	#wrapper nav#primary a.button-h-s{
+	display:none;
 	position: fixed;
-	top: 1%;
-	right: 0;
-	    width: 100%;
-		/*background-color: #bcbcbc;*/
-    padding-left: 6%;
-    padding-bottom: 4.5%;
-	background:('navStyle.png');
-	
-}
+	    top: 3%;
+	    left: 80%;
+	}
+	#wrapper nav#primary a.button-b-s{
+	display:none;
+		margin-top: 45px;
+		}
 
-#wrapper nav#primary ul {
-	width:50%;
-	
+
+	#wrapper img#bg2-1{position: absolute;
+	    top: 415px;
+	    left: 515px;
+	    width: 40%;}
+	#wrapper img#bg2-2{    position: absolute;
+	    top: 1322px;
+	    left: 597px;}
+	#wrapper img#bg2-3{ display:none;}
+	#wrapper img#bg2-4{    position: absolute;
+	    top: 2581px;
+	    left: 597px;}
+	#wrapper img#bg1-1 {
+	    position: absolute;
+	    top: 135px;
+	    left: 126px;
+	}
+	#wrapper img#bg1-2 {
+	    position: absolute;
+	    top: 950px;
+	    left: 745px;
 	}
 
-#wrapper nav#primary li {
-    position: relative;
-    height: 0; 
-    display: inline-flex;
-	    left: 5%;
-}
+	#wrapper img#bg3-1{  position: absolute;
+	    top: 146px;
+	    left: 455px;
+	    width: 6%;}
 
-.bc-g .a1{ height:100px; }
+	#button-c span p{
+	    width: 20%;
+	    font-size: 18px;
 
-#wrapper nav#primary a.button-a-s{
-display:none;
-    line-height: 23.6px;  
-	position: fixed;
-    top: 2.5%;
-    left: 1%;
-}
-
-#wrapper nav#primary a.button-b-s{
-display:none;
-	       width: 99px;
-    position: relative;
-    top: -6.8%;
-    left: 60.4%;
 	}
-#wrapper nav#primary a.button-c-s{
-display:none;
-    margin-top: 0;
-    margin-left: 15px;
-    line-height: 2px;
-}
-
-#wrapper nav#primary a.button-d-s{
-display:none;
-	    position: fixed;
-    top: 2.5%;
-    left: 34.1%;
+	p.right {
+	  
+	    text-align:left; 
 	}
-#wrapper nav#primary a.button-e-s{
-display:none;
-        position: fixed;
-    top: 2.5%;
-    left: 48%;
+	article#button-c header {
+	    margin-left: 39%;
 	}
-#wrapper nav#primary a.button-f-s{
-display:none;
-        position: fixed;
-    top: 2.5%;
-    left: 61.9%;
+	article#button-d header {
+	    margin-left: 18%;
 	}
-#wrapper nav#primary a.button-h-s{
-display:none;
-position: fixed;
-    top: 3%;
-    left: 80%;
-}
-#wrapper nav#primary a.button-b-s{
-display:none;
-	margin-top: 45px;
+	article#button-e header {
+	    margin-left: 3%;
 	}
 
-
-#wrapper img#bg2-1{position: absolute;
-    top: 415px;
-    left: 515px;
-    width: 40%;}
-#wrapper img#bg2-2{    position: absolute;
-    top: 1322px;
-    left: 597px;}
-#wrapper img#bg2-3{ display:none;}
-#wrapper img#bg2-4{    position: absolute;
-    top: 2581px;
-    left: 597px;}
-#wrapper img#bg1-1 {
-    position: absolute;
-    top: 135px;
-    left: 126px;
-}
-#wrapper img#bg1-2 {
-    position: absolute;
-    top: 950px;
-    left: 745px;
-}
-
-#wrapper img#bg3-1{  position: absolute;
-    top: 146px;
-    left: 455px;
-    width: 6%;}
-
-#button-c span p{
-    width: 20%;
-    font-size: 18px;
-
-}
-p.right {
-  
-    text-align:left; 
-}
-article#button-c header {
-    margin-left: 39%;
-}
-article#button-d header {
-    margin-left: 18%;
-}
-article#button-e header {
-    margin-left: 3%;
-}
-
-#button-f header img{  width: 90%;}
-article#button-g header{ margin-left: 50%;}
-article#button-g .a1{    width: 29%;}
-#primary{   }
+	#button-f header img{  width: 90%;}
+	article#button-g header{ margin-left: 50%;}
+	article#button-g .a1{    width: 29%;}
+	#primary{   }
 
 }
 @media screen and (max-width: 400px) , screen and (max-width: 650px){
