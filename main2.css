@@ -168,7 +168,7 @@ nav#primary a.button-b-s {
     margin-left: 157px;*/
 
 }
-.btitle{ margin-top: 150px; }
+.btitle{ margin-top: 40px; }
 .bwrap { display: flex; justify-content: space-between;}
 .bwrap img{ background-color: #FFFFFF; width:30%; height:50%; }
 .bwrap img:hover{ background:unset; }
