@@ -168,6 +168,9 @@ nav#primary a.button-b-s {
     margin-left: 157px;*/
 
 }
+.btitle{ margin-top: 150px; }
+.bwrap { display: flex; justify-content: space-between;}
+.bwrap img{ background-color: #FFFFFF; width:10%; height:10%; }
 nav#primary a.button-b-s:hover,nav#primary a.button-bc{ background: transparent url('navStyle22.png') -156px -63px  no-repeat; }
 nav#primary a.button-c-s {
 	display: block;
