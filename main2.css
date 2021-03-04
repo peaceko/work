@@ -249,7 +249,7 @@ nav#primary a.button-i-s {
 .bc-g .a1 .p1 img{ width:100%; transition: .90s ease-in-out; transform: rotate(0deg) scale(1); }
 .bc-g .a1 .p1 img:hover{ filter: grayscale(3) blur(0px); transform:rotate(45deg);  }
 header img{ width:100%; transition:.90s ease-in-out; transform: rotate(0deg) scale(1); }
-header img:hover{ filter: grayscale(3) blur(0px); transform: rotate(25deg); width:155%; }
+/*header img:hover{ filter: grayscale(3) blur(0px); transform: rotate(25deg); width:155%; }*/
 
 
 .arti-ac{opacity: 0;}
