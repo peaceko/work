@@ -156,7 +156,7 @@ nav#primary a.button-a-s {
 }
 
 
-nav#primary a.button-a-s:hover,nav#primary a.button-ac{ background: transparent url('navStyle22.png') 0px 0px  no-repeat; }
+/*nav#primary a.button-a-s:hover,nav#primary a.button-ac{ background: transparent url('navStyle22.png') 0px 0px  no-repeat; }*/
 
 nav#primary a.button-b-s {
 	display: block;
