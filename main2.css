@@ -690,7 +690,7 @@ nav.next-prev {
 		#button-b p{ color:#000;}
 		#button-b a img{ }
 		#button-b a{ float:left;}
-		/*#button-b a:hover{ background-image: url('web_04-2.png');}*/
+		
 		
 		#button-c span{  ground-color: #666; display:block; margin-bottom:30px; }
 		#button-c span img{ width:30%; }
