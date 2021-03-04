@@ -170,7 +170,7 @@ nav#primary a.button-b-s {
 }
 .btitle{ margin-top: 40px; }
 .bwrap { display: flex; justify-content: space-between;}
-.bwrap img{ background-color: #FFFFFF; width:30%; height:50%; }
+.bwrap img{ background-color: #FFFFFF; width:85%; height:100%; }
 .bwrap img:hover{ background:unset; }
 /*nav#primary a.button-b-s:hover,nav#primary a.button-bc{ background: transparent url('navStyle22.png') -156px -63px  no-repeat; }*/
 nav#primary a.button-c-s {
