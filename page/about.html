@@ -1,0 +1,174 @@
+<html>
+
+<head>
+<title>Star Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="set/style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="banner-slide/banner-slide.css">
+<script src="banner-slide/banner-slide.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="galleryset/css/style.css" >
+
+
+</head>
+
+<body>
+
+<div class="header">
+
+
+    <nav class="menu" >
+           <a id="menubtn" class="toggle-nav" href="javascript: void(0)">☰</a>
+           <div class="menu-logo"><a href="index.html"><img src="set/img/deerLogo3.png"></a></div>
+           <ul id="menuUl" class="active">
+               <li ><a href="index.html">首頁</a></li>
+               <li class="current-active"><a href="about.html">關於我們</a></li>
+               <li><a href="news.html">最新消息</a></li>
+               <li><a href="gallery.html">作品欣賞</a></li>
+               <li><a href="services.html">服務項目</a></li>
+               <li><a href="contact.html">聯絡我們</a></li>
+           </ul>
+    </nav>
+
+
+    <div class="topbgcolor">
+    </div>
+
+
+    <div id="slide"  >
+       <!--banner1-->
+        <img src="banner1.png" width="100%">
+         <!--banner2-->
+        <img src="banner2.png" width="100%">
+
+
+    </div>
+
+</div>
+
+
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+var counter = 0, // 一開始要顯示的圖，0 的話就是顯示第一張
+slide = document.querySelector('#slide'),
+items = slide.querySelectorAll('img'), // 抓取所有 img
+itemsCount = items.length, // 圖片總數 
+prevBtn = document.createElement('a'), // 上一張按鈕
+nextBtn = document.createElement('a'), // 下一張按鈕
+timer = 4000, // 3000=4 秒換圖
+interval = window.setInterval(showNext, timer); // 設定循環
+
+prevBtn.classList.add('prev'); // 幫上一張按鈕加 class＝"prev" 給 CSS 指定樣式用
+nextBtn.classList.add('next'); // 幫下一張按鈕加 class＝"next" 給 CSS 指定樣式用
+slide.appendChild(prevBtn); // 將按鈕加到 #slide 裡
+slide.appendChild(nextBtn);
+
+// 帶入目前要顯示第幾張圖 
+var showCurrent = function () {
+  var itemToShow = Math.abs(counter % itemsCount); // 取餘數才能無限循環
+  [].forEach.call(items, function (el) {
+    el.classList.remove('show'); // 將所有 img 的 class="show" 移除
+  });
+  items[itemToShow].classList.add('show'); // 將要顯示的 img 加入 class="show"
+};
+
+function showNext() {
+  counter++; // 將 counter+1 指定下一張圖
+  showCurrent();
+}
+
+function showPrev() {
+  counter--; // 將 counter－1 指定上一張圖
+  showCurrent();
+}
+
+// 滑鼠移到 #slider 上方時，停止循環計時
+slide.addEventListener('mouseover', function () {
+  interval = clearInterval(interval);
+});
+
+// 滑鼠離開 #slider 時，重新開始循環計時
+slide.addEventListener('mouseout', function () {
+  interval = window.setInterval(showNext, timer);
+});
+
+// 綁定點擊上一張，下一張按鈕的事件
+nextBtn.addEventListener('click', showNext, false);
+prevBtn.addEventListener('click', showPrev, false);
+
+// 一開始秀出第一張圖，也可以在 HTML 的第一個 img 裡加上 class="show"
+items[0].classList.add('show');
+//# sourceURL=pen.js
+    </script>
+    
+<!-- about -->
+<div class="about-area ">
+  <div class="about-inner">
+
+    <img class="about-03" src="set/img/about/about_03.png">
+    
+
+
+
+    <div class="about-wrape">
+      
+      <h2 class="title">STAR DESTGN</h2>
+      <p>company profile公司簡介--<br>
+        自西元19xx年起，於台北創立的設計公司。<br>
+        專門為室內設計需求的客戶進行<br>
+        評估以建議以及工程實施等等服務項目。<br>
+        過去有許多建案經驗，從中獲得不少的實戰經驗。<br><br>
+
+        design concept設計理念--<br>
+        以「人」為本，融入對設計得執念，專注在每個案件的細節中，磨合於成長的<br>
+        過程就如同不凋零的精神。<br><br>
+
+        brand品牌介紹--<br>
+        象徵著「廣大」的意義，包含著如同宇宙般存在的概念，願能像星星許願般的存在。
+      </p>
+
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- about end -->
+
+<div class="fixblock"></div>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="footer-wrape">
+    <img src="set/img/deerLogo4.png">
+    <ul>
+      <li><a href="about.html">關於我們</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="gallery.html">作品欣賞</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="contact.html">聯絡我們</a></li>
+    </ul>
+
+    <p>Copyright ©2021 STAR DESIGN.</p>
+
+  </div>  
+
+</footer>
+<!-- footer end -->
+
+
+
+
+   <script src="set/style.js"></script> 
+
+</body>
+
+</html>

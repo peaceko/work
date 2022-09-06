@@ -1,0 +1,19 @@
+
+.gallery{ width:100%; margin: 0 auto; text-align: center; }
+.gallery a{}
+.gallery a img{ width: calc( 100% /3 - 20px); margin-top:10px; margin-right: 5px; margin-left:5px; }
+.fancybox-is-open .fancybox-bg{     opacity: .3 !important; }
+
+
+
+
+@media(max-width: 768px){
+
+	body .gallery a img{ width: calc( 100% /2 - 20px); }
+}
+
+
+@media(max-width: 500px){
+
+	body .gallery a img{ width: 100%; }
+}

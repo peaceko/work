@@ -1,0 +1,257 @@
+<html>
+
+<head>
+<title>Star Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="set/style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="banner-slide/banner-slide.css">
+<script src="banner-slide/banner-slide.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="galleryset/css/style.css" >
+
+
+
+</head>
+
+<body>
+
+
+     <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+
+<div class="header">
+
+
+    <nav class="menu" >
+           <a id="menubtn" class="toggle-nav" href="javascript: void(0)">☰</a>
+           <div class="menu-logo"><a href="index.html"><img src="set/img/deerLogo3.png"></a></div>
+           <ul id="menuUl" class="active">
+               <li class="current-active"><a href="index.html">首頁</a></li>
+               <li><a href="about.html">關於我們</a></li>
+               <li><a href="news.html">最新消息</a></li>
+               <li><a href="gallery.html">作品欣賞</a></li>
+               <li><a href="services.html">服務項目</a></li>
+               <li><a href="contact.html">聯絡我們</a></li>
+           </ul>
+    </nav>
+
+
+    <div class="topbgcolor">
+    </div>
+
+
+    <div id="slide"  >
+       <!--banner1-->
+        <img src="banner1.png" width="100%">
+         <!--banner2-->
+        <img src="banner2.png" width="100%">
+
+
+    </div>
+
+</div>
+
+
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+var counter = 0, // 一開始要顯示的圖，0 的話就是顯示第一張
+slide = document.querySelector('#slide'),
+items = slide.querySelectorAll('img'), // 抓取所有 img
+itemsCount = items.length, // 圖片總數 
+prevBtn = document.createElement('a'), // 上一張按鈕
+nextBtn = document.createElement('a'), // 下一張按鈕
+timer = 4000, // 3000=4 秒換圖
+interval = window.setInterval(showNext, timer); // 設定循環
+
+prevBtn.classList.add('prev'); // 幫上一張按鈕加 class＝"prev" 給 CSS 指定樣式用
+nextBtn.classList.add('next'); // 幫下一張按鈕加 class＝"next" 給 CSS 指定樣式用
+slide.appendChild(prevBtn); // 將按鈕加到 #slide 裡
+slide.appendChild(nextBtn);
+
+// 帶入目前要顯示第幾張圖 
+var showCurrent = function () {
+  var itemToShow = Math.abs(counter % itemsCount); // 取餘數才能無限循環
+  [].forEach.call(items, function (el) {
+    el.classList.remove('show'); // 將所有 img 的 class="show" 移除
+  });
+  items[itemToShow].classList.add('show'); // 將要顯示的 img 加入 class="show"
+};
+
+function showNext() {
+  counter++; // 將 counter+1 指定下一張圖
+  showCurrent();
+}
+
+function showPrev() {
+  counter--; // 將 counter－1 指定上一張圖
+  showCurrent();
+}
+
+// 滑鼠移到 #slider 上方時，停止循環計時
+slide.addEventListener('mouseover', function () {
+  interval = clearInterval(interval);
+});
+
+// 滑鼠離開 #slider 時，重新開始循環計時
+slide.addEventListener('mouseout', function () {
+  interval = window.setInterval(showNext, timer);
+});
+
+// 綁定點擊上一張，下一張按鈕的事件
+nextBtn.addEventListener('click', showNext, false);
+prevBtn.addEventListener('click', showPrev, false);
+
+// 一開始秀出第一張圖，也可以在 HTML 的第一個 img 裡加上 class="show"
+items[0].classList.add('show');
+//# sourceURL=pen.js
+    </script>
+    
+<!-- about -->
+<div class="about-area ">
+  <div class="about-inner">
+
+    <img class="about-01" src="set/img/index_03.png">
+    <img class="about-02" src="set/img/index_06.png">
+
+
+
+    <div class="info">
+      
+      <h2 class="title">STAR DESTGN</h2>
+      <p>生活品質的美學，時時刻刻影響著我們<br>
+        星辰設計的品質把關，是讓人可以信賴安心的<br>
+        我們期許最佳的設計與技術呈現給客戶<br>
+        創造力使我們活化思想兌現<br>
+        給予一個美好的空間未來<br><br>
+      </p>
+
+      <a class="btn-bt" href="about.html">About Company</a>
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- about end -->
+
+
+
+<!-- service -->
+
+<div class="service-area ">
+  <div class="service-inner">
+    
+
+    <div class="info clear">
+      <ul>
+        <li><a href=""><span><img src="set/img/comments-regular.svg" width="50"></span>初步階段</a></li>
+        <li><a href=""><span><img src="set/img/pencil-ruler-solid.svg" width="40"></span>設計流程</a></li>
+        <li><a href=""><span><img src="set/img/file-signature-solid.svg" width="50"></span>第二階段簽約</a></li>
+        <li><a href=""><span><img src="set/img/file-contract-solid.svg" width="35"></span>施工流程</a></li>
+      </ul> 
+    </div>
+
+
+  </div>
+</div>
+
+<!-- service end -->
+
+
+<!-- news -->
+<div class="news-area ">
+  <div class="news-inner">
+  
+    <div class="news">
+      <h2>NEWS</h2>
+      <div class="news_info">
+          <ul>
+            <li><a href="n1.html"><div class="date"><span class="day">15</span> <span><b>2021</b><b>OCT</b></span> </div>
+              <p>哈囉，歡迎來到xx設計公司！</p>
+            </a></li>
+
+            <li><a href="n1.html"><div class="date"><span class="day">11</span> <span><b>2021</b><b>OCT</b></span> </div>
+              <p>新的網站上線了！請大家持續關注，謝謝！</p>
+            </a></li>
+            <li><a href="n1.html"><div class="date"><span class="day">09</span> <span><b>2021</b><b>OCT</b></span> </div>
+              <p>作品『樸實居家』榮獲IF大獎金牌殊榮</p>
+            </a></li>
+          </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+<!-- news end -->
+
+
+<!-- gallery -->
+<div class="gallery-area ">
+  <div class="gallery-inner">
+      <h2>GALLERY</h2>
+
+      <div class="gallery">
+
+          <a data-fancybox="gallery" href="galleryset/img/1.jpg"><img src="galleryset/img/1.jpg" alt="" ></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/2.jpg"><img src="galleryset/img/2.jpg" alt="" ></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/3.jpg"><img src="galleryset/img/3.jpg" alt="" ></a>
+          <a data-fancybox="gallery" href="galleryset/img/4.jpg"><img src="galleryset/img/4.jpg" alt="" ></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/5.jpg"><img src="galleryset/img/5.jpg" alt="" ></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/6.jpg"><img src="galleryset/img/6.jpg" alt=""></a>
+          <a data-fancybox="gallery" href="galleryset/img/7.jpg"><img src="galleryset/img/7.jpg" alt=""></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/8.jpg"><img src="galleryset/img/8.jpg" alt="" ></a>
+
+          <a data-fancybox="gallery" href="galleryset/img/9.jpg"><img src="galleryset/img/9.jpg" alt="" ></a>
+        </div>
+
+  </div>
+</div>
+
+<!-- gallery end -->
+
+
+
+
+<!-- footer -->
+<footer>
+  <div class="footer-wrape">
+    <img src="set/img/deerLogo4.png">
+    <ul>
+      <li><a href="about.html">關於我們</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="gallery.html">作品欣賞</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="contact.html">聯絡我們</a></li>
+    </ul>
+
+    <p>Copyright ©2021 STAR DESIGN.</p>
+
+  </div>  
+
+</footer>
+<!-- footer end -->
+
+
+
+
+   <script src="set/style.js"></script> 
+
+</body>
+
+</html>
